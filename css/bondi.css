@@ -1,0 +1,386 @@
+:root 
+{
+    --mainColor : #15133C;
+    --secondColor : #fcc999;
+    --btnColor : #fd3b3b;
+    --backColor : #edecff;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    /* height: 10000px; */
+    
+}
+.main-btn 
+{
+    background-color: var(--btnColor);
+    border: 1px solid var(--btnColor);
+    color: white;
+} 
+.main-btn:hover 
+{
+    background-color: var(--btnColor);
+    opacity: 0.8;
+    border: 1px solid var(--btnColor);
+}
+.main-title h2 
+{
+    color: var(--mainColor);
+    /* letter-spacing: -1px; */
+    word-spacing: -2px;
+} 
+.main-title p 
+{
+        letter-spacing: -0.5px;
+        font-size: 14px;
+}
+.main-title svg 
+{
+    width: 60px;
+    height: 60px;
+}
+.main-title::before 
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    bottom: 0px;
+    width: 120px;
+    height: 2px;
+    background-color: var(--btnColor);
+}
+/* Start Nav Section */
+.navbar 
+{
+    background-color: var(--mainColor);
+}
+.navbar-brand 
+{
+    color: #EC994B;
+}
+.navbar-brand:hover 
+{
+    color: #f8be87;
+}
+.nav-item .nav-link 
+{
+    color: #f8be87;
+}
+.navbar .navbar-nav .navbar-nav  .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover
+{
+    color: wheat;
+    font-size: 15px;
+}
+.navbar .search 
+{
+    border-left: 1px solid var(--secondColor); 
+}
+.navbar-toggler 
+{
+    border-color: #EC994B;
+}
+.svg-inline--fa 
+{
+    color: #EC994B;
+}
+/* End Nav Section */
+/* Start Landing Section */
+.landing 
+{
+    background-color: var(--mainColor);
+    min-height: calc(100vh - 56px);
+}
+.landing .logo 
+{
+
+    width: 150px;
+    height: 150px;
+}
+.landing h1 
+{
+    color: var(--secondColor);
+    letter-spacing: 1.5px;
+}
+.landing p 
+{
+    color: var(--secondColor);
+    opacity: 0.7;
+}
+/* End Landing Section */
+/* Start Features Section */
+.number 
+{
+    opacity: 0.15;
+    font-size: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.pencil 
+{
+    width: 70px;
+    height: 50px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.feat 
+{
+    height: 400px;
+}
+.feat-header 
+{
+    color: var(--mainColor);
+}
+/* End Features Section */
+/* Start Our Work Section */
+.our-work 
+{
+    background-color: #edecff;
+}
+.our-work ul li 
+{
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+}
+.our-work ul .active 
+{
+    background-color: var(--btnColor);
+    color: white;
+}
+.our-work ul li:not(.active):hover 
+{
+    color: var(--btnColor);
+}
+.our-work .box 
+{
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .box::before 
+{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #15133ce0;
+    width: 100%;
+    height: calc(100% + 10px);
+    left: -100%;
+    top: -5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+.our-work .box:hover::before 
+{
+    left: 0;
+}
+.our-work .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* End Our Work Section */
+/*Start Stuff Section*/
+.stuff .desc 
+{
+    max-width: 500px;
+}
+/*End Stuff Section*/
+/*Start Our Team Section*/
+.our-team 
+{
+    background-color: var(--backColor);
+}
+.our-team .box-parent 
+{
+    padding: 10px;
+}
+.our-team .box-child 
+{
+    padding: 0px;
+    /*border: 1px solid black;*/
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.our-team .title-team 
+{
+    color: var(--btnColor);
+}
+.our-team .para-team 
+{
+    max-width: 500px;
+}
+.our-team .box-title 
+{
+    padding: 10px 0px;
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+    margin: 0px;
+}
+.our-team .box-para 
+{
+    background-color: white;
+    padding: 20px 5px;
+    margin: 0px;
+}
+/*End Our Team Section*/
+/*Start Tech Section*/
+.tech .tech-image 
+{
+    padding: 10px;
+}
+.tech .tech-image img 
+{
+    max-width: 65px;
+}
+/*End Tech Section*/
+/*Start Project Section*/
+.project 
+{
+    background-color: var(--mainColor);
+}
+.project .head-project 
+{
+    color: white;
+}
+/*End Project Section*/
+/*Start Blog Section*/
+.blog .card-image 
+{
+    max-height: 160px;
+}
+/*End Blog Section*/
+/*Start Subscribe Section*/
+.subscribe 
+{
+    background-color: #EC994B;
+}
+.subscribe p 
+{
+    margin: 0px;
+}
+.subscribe input[type="submit"] 
+{
+    background-color: var(--mainColor);
+    color: #EC994B;
+}
+.subscribe input[type="text"] 
+{
+    background-color: #EC994B;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.subscribe input[type="text"]::placeholder 
+{
+    color: white;
+}
+.subscribe input[type="text"]:focus 
+{
+    outline: none;
+    border-bottom: 1px solid var(--mainColor);
+}
+.subscribe p 
+{
+    font-size: 15px;
+}
+/*End Subscribe Section*/
+/*Start Footer Section*/
+.footer 
+{
+    background-color: var(--mainColor);
+}
+.footer h3 
+{
+    color: #EC994B;
+}
+.footer p
+{
+    line-height: 2;
+}
+.footer .special-word 
+{
+    color: #EC994B;
+}
+.footer .special-name 
+{
+    color: var(--btnColor);
+}
+.footer .links,
+.footer .about-us 
+{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer .links li:first-child,
+.footer .about-us li:first-child 
+{
+    margin-top: 10px;
+} 
+.footer .links li,
+.footer .about-us li 
+{
+    padding: 6px 0px;
+    cursor: pointer;
+}
+.footer .links li:hover a,
+.footer .about-us li:hover a
+{
+    color: #EC994B;
+}
+.footer .links li a,
+.footer .about-us li a  
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.507);
+}
+.footer .social-logo svg 
+{
+    width: 17px;
+    height: 17px;
+}
+.footer ul .facebook 
+{
+    background-color: #1877f2;
+}
+.footer ul .twitter 
+{
+    background-color: #1da1f2;
+}
+.footer ul .linkedin 
+{
+    background-color: #0077b5;
+}
+.footer ul .youtube 
+{
+    background-color: #ff0000;
+}
+/*End Footer Section*/
